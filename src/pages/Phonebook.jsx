@@ -1,4 +1,4 @@
-import { Filter } from "components/Filter";
+import { Filter } from "../components/Filter/Filter";
 import { ContactsForm } from "../components/ContactsForm/ContactsForm";
 import { ContactsList } from "../components/ContactsList/ContactsList";
 import { selectError, selectLoading } from "redux/contacts/selectors";
