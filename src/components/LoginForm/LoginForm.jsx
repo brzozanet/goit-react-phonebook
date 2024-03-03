@@ -1,26 +1,26 @@
-import { login } from 'redux/auth/operations';
-import { useDispatch } from 'react-redux';
-import { Button, TextField } from '@mui/material';
+import { login } from "redux/auth/operations";
+import { useDispatch } from "react-redux";
+import { Button, TextField } from "@mui/material";
 
 const styles = {
-  containerDiv: ['flex', 'justify-center', 'mt-28'].join(' '),
+  containerDiv: ["flex", "justify-center", "mt-28"].join(" "),
   loginForm: [
-    'flex',
-    'flex-col',
-    'border-2',
-    'p-14',
-    'rounded-3xl',
-    'shadow-lg',
-  ].join(' '),
-  label: 'mb-5',
+    "flex",
+    "flex-col",
+    "border-2",
+    "p-14",
+    "rounded-3xl",
+    "shadow-lg",
+  ].join(" "),
+  label: "mb-5",
 };
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
+  const handleSubmit = event => {
+    event.preventDefault();
+    const form = event.target;
     const loginElement = {
       email: form.elements.email.value,
       password: form.elements.password.value,
