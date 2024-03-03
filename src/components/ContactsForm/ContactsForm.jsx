@@ -1,20 +1,20 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
 // import css from './ContactsForm.module.css';
-import { addContact } from 'redux/contacts/operations';
-import { selectContacts } from 'redux/contacts/selectors';
-import { Button, TextField } from '@mui/material';
+import { addContact } from "redux/contacts/operations";
+import { selectContacts } from "redux/contacts/selectors";
+import { Button, TextField } from "@mui/material";
 
 const styles = {
-  containerDiv: ['flex', 'justify-center', 'mt-5'].join(' '),
+  containerDiv: ["flex", "justify-center", "mt-5"].join(" "),
   contactForm: [
-    'flex',
-    'flex-col',
-    'border-2',
-    'p-3',
-    'rounded-3xl',
-    'shadow-lg',
-  ].join(' '),
-  label: 'mb-5',
+    "flex",
+    "flex-col",
+    "border-2",
+    "p-3",
+    "rounded-3xl",
+    "shadow-lg",
+  ].join(" "),
+  label: "mb-5",
 };
 
 export const ContactsForm = () => {
