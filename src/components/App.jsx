@@ -1,24 +1,24 @@
-import { useEffect, lazy } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchContacts } from 'redux/contacts/operations';
-import { Route, Routes } from 'react-router-dom';
-import { RestrictedRoute } from './RestrictedRoute';
-import { PrivateRoute } from './PrivateRoute';
-import { refreshUser } from 'redux/auth/operations';
-import { useAuth } from 'hooks/useAuth';
-import { Layout } from './Layout';
+import { useEffect, lazy } from "react";
+import { useDispatch } from "react-redux";
+import { fetchContacts } from "redux/contacts/operations";
+import { Route, Routes } from "react-router-dom";
+import { RestrictedRoute } from "./RestrictedRoute";
+import { PrivateRoute } from "./PrivateRoute";
+import { refreshUser } from "redux/auth/operations";
+import { useAuth } from "hooks/useAuth";
+import { Layout } from "./Layout/Layout";
 
 const LoginPage = lazy(() =>
-  import('pages/Login' /* webpackChunkName: "login-page" */)
+  import("pages/Login" /* webpackChunkName: "login-page" */)
 );
 const RegisterPage = lazy(() =>
-  import('pages/Register' /* webpackChunkName: "register-page" */)
+  import("pages/Register" /* webpackChunkName: "register-page" */)
 );
 const PhonebookPage = lazy(() =>
-  import('pages/Phonebook' /* webpackChunkName: "phonebook-page" */)
+  import("pages/Phonebook" /* webpackChunkName: "phonebook-page" */)
 );
 const HomePage = lazy(() =>
-  import('pages/Home' /* webpackChunkName: "home-page" */)
+  import("pages/Home" /* webpackChunkName: "home-page" */)
 );
 
 export const App = () => {
