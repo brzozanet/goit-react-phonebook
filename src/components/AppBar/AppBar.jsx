@@ -1,4 +1,4 @@
-import { AuthNav } from "components/AuthNav";
+import { AuthNav } from "../AuthNav/AuthNav";
 import { useAuth } from "hooks/useAuth";
 import { Navigation } from "components/Navigation";
 import { UserMenu } from "components/UserMenu";
