@@ -22,21 +22,21 @@ export const ContactsForm = () => {
   const stateContacts = useSelector(selectContacts);
   const stateContactsNames = stateContacts.map(contact => contact.name);
 
-  const handleSubmit = e => {
-    e.preventDefault();
+  const handleSubmit = event => {
+    event.preventDefault();
     const contact = {
-      name: e.target.elements.name.value,
-      number: e.target.elements.number.value,
+      name: event.target.elements.name.value,
+      number: event.target.elements.number.value,
     };
 
     if (stateContactsNames.includes(contact.name)) {
-      e.target.reset();
+      event.target.reset();
       return alert(`${contact.name} is alredy in contacts`);
     }
 
     dispatch(addContact(contact));
 
-    e.target.reset();
+    event.target.reset();
   };
 
   return (
