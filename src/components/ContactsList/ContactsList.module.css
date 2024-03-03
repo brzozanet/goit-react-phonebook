@@ -1,0 +1,25 @@
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactsListItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button:hover {
+    background-color: aqua;
+}
