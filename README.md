@@ -11,9 +11,7 @@ Logowanie testowego użytkownika:
 email:
 ```shell
 user@testing.com
-test password: testing
 ```
-
 hasło:
 ```shell
 testing
