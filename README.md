@@ -8,9 +8,15 @@
 
 Logowanie testowego użytkownika:
 
+email:
 ```shell
-test email: user@testing.com
+user@testing.com
 test password: testing
+```
+
+hasło:
+```shell
+testing
 ```
 
 Aby uruchomić wersję developerską:
