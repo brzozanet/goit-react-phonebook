@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { register } from "redux/auth/operations";
 
-const styles = {
+const css = {
   containerDiv: ["flex", "justify-center", "pt-32"].join(" "),
   registerForm: [
     "flex",
@@ -46,9 +46,9 @@ export const RegisterForm = () => {
   };
 
   return (
-    <div className={styles.containerDiv}>
-      <form onSubmit={handleSubmit} className={styles.registerForm}>
-        <lable className={styles.label}>
+    <div className={css.containerDiv}>
+      <form onSubmit={handleSubmit} className={css.registerForm}>
+        <label className={css.label}>
           <TextField
             id="register-name-input"
             label="Name"
@@ -57,8 +57,8 @@ export const RegisterForm = () => {
             autoComplete="off"
             autoFocus
           />
-        </lable>
-        <lable className={styles.label}>
+        </label>
+        <label className={css.label}>
           <TextField
             id="register-email-input"
             label="Email"
@@ -67,8 +67,8 @@ export const RegisterForm = () => {
             autoComplete="off"
             autoFocus
           />
-        </lable>
-        <lable className={styles.label}>
+        </label>
+        <label className={css.label}>
           <TextField
             id="register-password-input"
             label="Password"
@@ -77,7 +77,7 @@ export const RegisterForm = () => {
             autoComplete="off"
             autoFocus
           />
-        </lable>
+        </label>
         <Button type="submit" variant="contained">
           Register
         </Button>
