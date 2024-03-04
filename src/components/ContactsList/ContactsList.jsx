@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { deleteContact } from "redux/contacts/operations";
 import { selectVisibleContacts } from "redux/contacts/selectors";
-import css from "./ContactsList.module.css";
 import { Button } from "@mui/material";
+import css from "./ContactsList.module.css";
 
 export const ContactsList = () => {
   const contacts = useSelector(selectVisibleContacts);
@@ -17,7 +17,7 @@ export const ContactsList = () => {
           <div>
             {contact.name}: {contact.number}
             <Button type="submit" onClick={() => handleDelete(contact.id)}>
-              Delete {contact.name}
+              Delete
             </Button>
           </div>
         </li>

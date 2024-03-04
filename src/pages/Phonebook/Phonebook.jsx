@@ -5,8 +5,9 @@ import { selectError, selectLoading } from "redux/contacts/selectors";
 import { useSelector } from "react-redux";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-const styles = {
-  containerDiv: ["flex", "justify-center", "mb-4", "gap-4"].join(" "),
+const css = {
+  containerDiv: ["flex", "mb-4", "gap-4"].join(" "),
+  contactsDiv: ["mt-6"],
 };
 
 const Phonebook = () => {
@@ -14,19 +15,20 @@ const Phonebook = () => {
   const isError = useSelector(selectError);
 
   return (
-    <div>
+    <div className={css.containerDiv}>
       <HelmetProvider>
         <Helmet>
           <title>Phonebook</title>
         </Helmet>
       </HelmetProvider>
-
-      <div className={styles.containerDiv}>
+      <div>
         <ContactsForm />
         <Filter />
       </div>
-      {isLoading ? <p>Loading contacts...</p> : <ContactsList />}
-      {isError && <p>Something went wrong. Try again later.</p>}
+      <div className={css.contactsDiv}>
+        {isLoading ? <p>Loading contacts...</p> : <ContactsList />}
+        {isError && <p>Something went wrong. Try again later.</p>}
+      </div>
     </div>
   );
 };
