@@ -2,7 +2,7 @@ import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { fetchContacts } from "redux/contacts/operations";
 import { Route, Routes } from "react-router-dom";
-import { RestrictedRoute } from "./RestrictedRoute";
+import { RestrictedRoute } from "./RestrictedRoute/RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute/PrivateRoute";
 import { refreshUser } from "redux/auth/operations";
 import { useAuth } from "hooks/useAuth";
