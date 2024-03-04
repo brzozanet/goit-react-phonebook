@@ -2,14 +2,15 @@ import { login } from "redux/auth/operations";
 import { useDispatch } from "react-redux";
 import { Button, TextField } from "@mui/material";
 
-const styles = {
+const css = {
   containerDiv: ["flex", "justify-center", "mt-28"].join(" "),
   loginForm: [
     "flex",
     "flex-col",
     "border-2",
     "p-14",
-    "rounded-3xl",
+    "bg-white",
+    "rounded-2xl",
     "shadow-lg",
   ].join(" "),
   label: "mb-5",
@@ -31,9 +32,9 @@ export const LoginForm = () => {
   };
 
   return (
-    <div className={styles.containerDiv}>
-      <form onSubmit={handleSubmit} className={styles.loginForm}>
-        <label className={styles.label}>
+    <div className={css.containerDiv}>
+      <form onSubmit={handleSubmit} className={css.loginForm}>
+        <label className={css.label}>
           <TextField
             id="login-email-input"
             label="Email"
@@ -42,7 +43,7 @@ export const LoginForm = () => {
             autoComplete="email"
           />
         </label>
-        <label className={styles.label}>
+        <label className={css.label}>
           <TextField
             id="login-password-input"
             label="Password"

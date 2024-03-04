@@ -11,7 +11,8 @@ const css = {
     "flex-col",
     "border-2",
     "p-14",
-    "rounded-3xl",
+    "bg-white",
+    "rounded-2xl",
     "shadow-lg",
   ].join(" "),
   label: "mb-5",
@@ -55,7 +56,6 @@ export const RegisterForm = () => {
             type="text"
             name="username"
             autoComplete="off"
-            autoFocus
           />
         </label>
         <label className={css.label}>
@@ -65,7 +65,6 @@ export const RegisterForm = () => {
             type="email"
             name="email"
             autoComplete="off"
-            autoFocus
           />
         </label>
         <label className={css.label}>
@@ -75,7 +74,6 @@ export const RegisterForm = () => {
             type="password"
             name="password"
             autoComplete="off"
-            autoFocus
           />
         </label>
         <Button type="submit" variant="contained">

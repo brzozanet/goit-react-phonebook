@@ -8,9 +8,10 @@ const css = {
   contactForm: [
     "flex",
     "flex-col",
+    "bg-white",
     "border-2",
-    "p-3",
-    "rounded-3xl",
+    "p-8",
+    "rounded-2xl",
     "shadow-lg",
   ].join(" "),
   label: "mb-5",
