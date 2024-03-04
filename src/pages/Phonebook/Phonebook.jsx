@@ -1,6 +1,6 @@
-import { Filter } from "../components/Filter/Filter";
-import { ContactsForm } from "../components/ContactsForm/ContactsForm";
-import { ContactsList } from "../components/ContactsList/ContactsList";
+import { Filter } from "../../components/Filter/Filter";
+import { ContactsForm } from "../../components/ContactsForm/ContactsForm";
+import { ContactsList } from "../../components/ContactsList/ContactsList";
 import { selectError, selectLoading } from "redux/contacts/selectors";
 import { useSelector } from "react-redux";
 import { Helmet, HelmetProvider } from "react-helmet-async";

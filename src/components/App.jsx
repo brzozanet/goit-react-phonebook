@@ -9,16 +9,16 @@ import { useAuth } from "hooks/useAuth";
 import { Layout } from "./Layout/Layout";
 
 const LoginPage = lazy(() =>
-  import("pages/Login" /* webpackChunkName: "login-page" */)
+  import("pages/Login/Login" /* webpackChunkName: "login-page" */)
 );
 const RegisterPage = lazy(() =>
-  import("pages/Register" /* webpackChunkName: "register-page" */)
+  import("pages/Register/Register" /* webpackChunkName: "register-page" */)
 );
 const PhonebookPage = lazy(() =>
-  import("pages/Phonebook" /* webpackChunkName: "phonebook-page" */)
+  import("pages/Phonebook/Phonebook" /* webpackChunkName: "phonebook-page" */)
 );
 const HomePage = lazy(() =>
-  import("pages/Home" /* webpackChunkName: "home-page" */)
+  import("pages/Home/Home" /* webpackChunkName: "home-page" */)
 );
 
 export const App = () => {
