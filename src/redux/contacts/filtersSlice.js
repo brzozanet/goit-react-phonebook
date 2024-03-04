@@ -1,9 +1,9 @@
-const { createSlice } = require('@reduxjs/toolkit');
+const { createSlice } = require("@reduxjs/toolkit");
 
-const filtersInitialState = { filter: '' };
+const filtersInitialState = { filter: "" };
 
 const filtersSlice = createSlice({
-  name: 'filters',
+  name: "filters",
   initialState: filtersInitialState,
   reducers: {
     filterContact(state, action) {
