@@ -3,7 +3,7 @@ import { addContact } from "redux/contacts/operations";
 import { selectContacts } from "redux/contacts/selectors";
 import { Button, TextField } from "@mui/material";
 
-const styles = {
+const css = {
   containerDiv: ["flex", "justify-center", "mt-5"].join(" "),
   contactForm: [
     "flex",
@@ -40,9 +40,9 @@ export const ContactsForm = () => {
   };
 
   return (
-    <div className={styles.containerDiv}>
-      <form className={styles.contactForm} onSubmit={handleSubmit}>
-        <label className={styles.label}>
+    <div className={css.containerDiv}>
+      <form className={css.contactForm} onSubmit={handleSubmit}>
+        <label className={css.label}>
           <TextField
             type="text"
             size="small"
@@ -52,7 +52,7 @@ export const ContactsForm = () => {
             required
           />
         </label>
-        <label className={styles.label}>
+        <label className={css.label}>
           <TextField
             type="tel"
             size="small"
