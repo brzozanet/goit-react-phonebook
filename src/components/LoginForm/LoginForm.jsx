@@ -41,6 +41,7 @@ export const LoginForm = () => {
             type="email"
             name="email"
             autoComplete="email"
+            autoFocus
           />
         </label>
         <label className={css.label}>

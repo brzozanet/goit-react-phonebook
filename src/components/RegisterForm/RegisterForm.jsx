@@ -56,6 +56,7 @@ export const RegisterForm = () => {
             type="text"
             name="username"
             autoComplete="off"
+            autoFocus
           />
         </label>
         <label className={css.label}>
