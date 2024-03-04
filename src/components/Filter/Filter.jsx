@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { filterContact } from "../../redux/contacts/filtersSlice";
 import { TextField } from "@mui/material";
 
-const styles = {
+const css = {
   containerDiv: ["flex", "justify-center", "mt-4"].join(" "),
   filterForm: [
     "flex",
@@ -24,10 +24,10 @@ export const Filter = () => {
   const handleFilter = event => dispatch(filterContact(event.target.value));
 
   return (
-    <div className={styles.containerDiv}>
-      <form className={styles.filterForm}>
-        <h3 className={styles.textH3}>Find contacts by name</h3>
-        <label className={styles.label}>
+    <div className={css.containerDiv}>
+      <form className={css.filterForm}>
+        <h3 className={css.textH3}>Find contacts by name</h3>
+        <label className={css.label}>
           <TextField onChange={handleFilter} size="small" label="Enter name" />
         </label>
       </form>
