@@ -21,7 +21,11 @@ const css = {
 export const Filter = () => {
   const dispatch = useDispatch();
 
-  const handleFilter = event => dispatch(filterContact(event.target.value));
+  const handleFilter = event => {
+    event.preventDefault();
+    const name = event.target.value;
+    dispatch(filterContact(name));
+  };
 
   return (
     <div className={css.containerDiv}>
