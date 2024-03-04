@@ -6,7 +6,7 @@ import { RestrictedRoute } from "./RestrictedRoute/RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute/PrivateRoute";
 import { refreshUser } from "redux/auth/operations";
 import { useAuth } from "hooks/useAuth";
-import { Layout } from "./Layout/Layout";
+import { Layout } from "../layouts/RootLayout/RootLayout";
 
 const LoginPage = lazy(() =>
   import("pages/Login/Login" /* webpackChunkName: "login-page" */)
