@@ -20,7 +20,7 @@ const styles = {
 export const Filter = () => {
   const dispatch = useDispatch();
 
-  const handleFilter = e => dispatch(filterContact(e.target.value));
+  const handleFilter = event => dispatch(filterContact(event.target.value));
 
   return (
     <div className={styles.containerDiv}>
