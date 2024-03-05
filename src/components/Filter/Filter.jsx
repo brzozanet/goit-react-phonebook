@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { filterContact } from "../../redux/contacts/filtersSlice";
+import { filteredContact } from "../../redux/contacts/filtersSlice";
 import { TextField } from "@mui/material";
 
 const css = {
@@ -24,7 +24,7 @@ export const Filter = () => {
   const handleFilter = event => {
     event.preventDefault();
     const name = event.target.value;
-    dispatch(filterContact(name));
+    dispatch(filteredContact(name));
   };
 
   return (
