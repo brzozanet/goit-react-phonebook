@@ -39,5 +39,5 @@ npm ci
 ```
 
 ```shell
-npm run dev
+npm start
 ```
